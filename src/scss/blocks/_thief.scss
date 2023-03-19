@@ -15,7 +15,8 @@
     font-size: 2em;
     font-weight: 700;
     text-transform: uppercase;
-    &:hover{
+
+    &:hover {
       @include text_on_hover;
     }
   }
@@ -30,9 +31,6 @@
     text-transform: lowercase;
     font-size: 1.6em;
     font-weight: 500;
-    &:hover{
-      @include text_on_hover_green;
-    }
   }
 
   &__schema {
@@ -41,6 +39,7 @@
       border-radius: 5px;
       border: solid 1px #fff;
       transition: ease all .3s;
+
       &:hover {
         border: solid 1px #a19b9b;
         color: #a19b9b;

@@ -31,9 +31,6 @@
     text-transform: lowercase;
     font-size: 1.6em;
     font-weight: 500;
-    &:hover{
-      @include text_on_hover_green;
-    }
   }
 
   &__phish {
@@ -54,5 +51,6 @@
       background-color: $section_bg;
       text-align: justify;
     }
+
   }
 }
