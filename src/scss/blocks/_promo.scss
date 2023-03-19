@@ -1,0 +1,34 @@
+.promo {
+  margin-top: 0;
+  padding-top: 0;
+
+  &__row {
+    @include center_row;
+  }
+
+  &__data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__image {
+    &__wrapper {
+     @include image_wrapper;
+    }
+  }
+
+  &__slogan {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    text-transform: lowercase;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+  }
+}

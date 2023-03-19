@@ -1,0 +1,58 @@
+.personal {
+
+  &__row {
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    &:last-child {
+      margin-bottom: 5px;
+      box-shadow: unset;
+    }
+  }
+
+  &__slogan {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+      @include text_on_hover;
+    }
+  }
+
+  &__image {
+    &__wrapper {
+      @include image_wrapper;
+    }
+  }
+
+  &__text {
+    text-transform: lowercase;
+    font-size: 1.6em;
+    font-weight: 500;
+    &:hover{
+      @include text_on_hover_green;
+    }
+  }
+
+  &__phish {
+    &__btn {
+      color: #fff;
+      border-radius: 5px;
+      border: solid 1px #fff;
+
+      &:hover {
+        border: solid 1px #a19b9b;
+        color: #a19b9b;
+      }
+    }
+
+    &__text {
+      text-transform: none;
+      font-size: 0.8em;
+      background-color: $section_bg;
+      text-align: justify;
+    }
+  }
+}

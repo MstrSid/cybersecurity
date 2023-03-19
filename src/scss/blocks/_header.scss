@@ -1,0 +1,31 @@
+.header {
+  @include header_bg;
+  transition: all ease .3s;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  min-height: 4rem;
+  color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+
+  .nav-link {
+    font-weight: 600;
+    font-size: 1.5em;
+    &:hover {
+      color: #4e95fa;
+    }
+  }
+
+  .dropdown-menu-dark {
+    @include header_bg;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  &__logo {
+    height: 4rem;
+    padding: 0.5rem;
+  }
+}

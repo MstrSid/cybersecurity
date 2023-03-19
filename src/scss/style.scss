@@ -1,0 +1,47 @@
+@import 'libs/bootstrap.min';
+@import "libs/fonts";
+@import "libs/animate.min";
+@import 'base/variables';
+@import "base/mixins";
+
+
+* {
+  font-family: "Century Gothic", sans-serif;
+}
+
+body {
+  @include bg_pattern;
+  //background-color: $main_bg;
+  color: #fff;
+}
+
+section {
+  margin-top: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.5);
+  background-color: $section_bg;
+  border-radius: 15px;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #04187e;
+  color: #fff;
+}
+
+.img-fluid {
+  transition: ease all .3s;
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/money';
+@import 'blocks/thief';
+@import 'blocks/personal';
+@import 'blocks/footer';
